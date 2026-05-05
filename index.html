@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content=" MetricalARGS: A Taxonomy for Studying Metrical Poetry with LLMs ">
+  <meta name="keywords" content="Poetry Analysis, Poetry Generation, Metrical poetry, Telugu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mata</title>
+
+  <script>
+    function updateSingleVideo() {
+      var demo = document.getElementById("single-menu-demos").value;
+      var task = document.getElementById("single-menu-tasks").value;
+      var inst = document.getElementById("single-menu-instances").value;
+
+      console.log("single", demo, task, inst)
+    }
+
+    function updateQpredVideo() {
+      var task = document.getElementById("single-menu-qpred").value;
+
+      console.log("qpred", task)
+    }
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body onload="updateSingleVideo(); updateQpredVideo();">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span class="towardsNocode">MetricalArgs</span>: A Taxonomy for Studying Metrical Poetry with LLMs</h1> 
+          <h3 class="title is-4 conference-authors"><a target="_blank" href="https://sanskrit.jnu.ac.in/conf/wildre8/">LREC-WILD<sup>RE</sup> 2026</a></h3>
+          <!-- <h3 class="title is-4 conference-authors">Extended version in <a target="_blank" href="https://link.springer.com/article/10.1007/s10514-023-10135-3">Autonomous Robots 2023</a></h3>-->
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=mXxxfRIAAAAJ&hl=en">Kranti CH</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=e4UbD1UAAAAJ&hl=en&oi=ao">Sowmya VB</a><sup>2</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Potsdam, Potsdam, Germany</span>
+            <span class="author-block"><sup>2</sup>National Research Council, Ottawa, Canada</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://sanskrit.jnu.ac.in/conf/wildre8/pdf/2026.wildre8-1.1.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>WILD<sup>RE</sup> Proceedings</span>
+                </a>
+              </span>            
+
+            <!-- Dataset Link. -->
+            <span class="link-block">
+              <a target="_blank" href="https://huggingface.co/datasets/TeluguLLMResearch/MetricalARGS"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Dataset</span>
+                </a>
+            </span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- DO DiFF ENVS -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Prior NLP work studying poetry has focused primarily on automatic poem generation and summarization. Many languages have well studied traditions of poetic meter which enforce constraints on a poem in terms of syllable and phoneme patterns. Such advanced literary forms offer opportunities for probing deeper reasoning and language understanding
+in Large Language Models (LLMs) and their ability to follow strict pre-requisites and rules. In this paper, we introduce METRICALARGS, the first taxonomy of poetry-related NLP tasks designed to evaluate LLMs on metrical poetry
+across four dimensions: Analysis, Retrieval, Generation, and Support. We discuss how these tasks relate to existing NLP tasks, addressing questions around datasets and evaluation metrics. Taking Telugu as our example language, we illustrate how the taxonomy can be used in practice. METRICALARGS highlights the broader possibilities for understanding the capabilities and limitations of today’s LLMs through the lens of metrical poetry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+ <pre><code>@inproceedings{kranti-etal-2026-metricalargs,
+    title = "MetricalARGS: A Taxonomy for Studying Metrical Poetry with LLMs",
+    author = "Kranti, Chalamalasetti and Vajjala, Sowmya",
+    booktitle = "Proceedings of the 8th Workshop on Indian Language Data Resources and Evaluation @ LREC 2026",
+    month = may,
+    year = "2026",
+    address = "Palma, Mallorca, Spain",
+    publisher = "European Language Resources Association (ELRA)"
+}
+</code></pre> 
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a href="https://github.com/peract/peract.github.io">PerAct</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
